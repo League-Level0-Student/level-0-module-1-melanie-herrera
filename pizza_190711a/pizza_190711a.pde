@@ -1,4 +1,9 @@
-void setup() {
+PImage pepperoni; 
+PImage mushroom;
+void setup() {pepperoni=loadImage("melaniepp.png");
+mushroom=loadImage("mushroom.jpeg");
+pepperoni.resize(30,30);
+mushroom.resize(30,30);
 size(600,600);
 fill(208,180,89);
 ellipse(100,180,200,200);
@@ -8,8 +13,12 @@ fill(243,187,3);
 ellipse(100,180,150,150);
 }
 void draw(){
-PImage pepperoni=loadImage("melaniepp.png");
-pepperoni.resize(30,30);
 image(pepperoni,100,180);
+image(pepperoni,100,109);
+image(pepperoni,130,160);
+image(pepperoni,70,100);
+image(pepperoni,50,100);
+image(mushroom, 100,200);
+
 
 }
