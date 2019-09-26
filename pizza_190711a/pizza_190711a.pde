@@ -18,7 +18,9 @@ image(pepperoni,100,109);
 image(pepperoni,130,160);
 image(pepperoni,70,100);
 image(pepperoni,50,100);
-image(mushroom, 100,200);
-
-
+image(mushroom,100,210);
+image(mushroom,100,150);
+image(mushroom,60,150);
+image(mushroom,30,160);
+image(mushroom,70,100);
 }
