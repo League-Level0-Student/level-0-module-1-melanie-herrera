@@ -1,7 +1,13 @@
+import ddf.minim.*; 
+Minim minim;    
+AudioPlayer sound; 
 PImage pepperoni; 
 PImage mushroom;
 void setup() {pepperoni=loadImage("melaniepp.png");
+minim = new Minim(this); 
+sound = minim.loadFile("cool sound (4).wav");
 mushroom=loadImage("mushroom.jpeg");
+
 pepperoni.resize(30,30);
 mushroom.resize(30,30);
 size(600,600);
@@ -15,8 +21,9 @@ ellipse(100,180,150,150);
 void draw(){
 if(mousePressed==true){
   int myLife=(int)random(2);
-  
-  if(myLife==0){
+  sound.play();
+sound.rewind();
+  if(myLife==0){ 
   
     image(pepperoni,mouseX,mouseY);
 
